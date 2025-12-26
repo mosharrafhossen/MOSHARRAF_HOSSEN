@@ -1,12 +1,26 @@
 /* =====================================================
+   DOM Helpers
+===================================================== */
+const $ = (selector) => document.querySelector(selector);
+const $$ = (selector) => document.querySelectorAll(selector);
+
+
+/* =====================================================
    Mobile Menu Toggle
 ===================================================== */
-const navToggle = document.getElementById('navToggle');
-const nav = document.getElementById('nav');
+const navToggle = $('#navToggle');
+const nav = $('#nav');
 
 if (navToggle && nav) {
   navToggle.addEventListener('click', () => {
     nav.classList.toggle('show');
+  });
+
+  // Close menu on link click (mobile UX)
+  nav.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      nav.classList.remove('show');
+    });
   });
 }
 
@@ -14,7 +28,7 @@ if (navToggle && nav) {
 /* =====================================================
    Footer Year
 ===================================================== */
-const yearEl = document.getElementById('year');
+const yearEl = $('#year');
 
 if (yearEl) {
   yearEl.textContent = new Date().getFullYear();
@@ -24,16 +38,16 @@ if (yearEl) {
 /* =====================================================
    Contact Form Validation
 ===================================================== */
-const form = document.getElementById('contactForm');
-const formMsg = document.getElementById('formMsg');
+const form = $('#contactForm');
+const formMsg = $('#formMsg');
 
 if (form && formMsg) {
   form.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    const name = form.name.value.trim();
-    const email = form.email.value.trim();
-    const message = form.message.value.trim();
+    const name = form.querySelector('[name="name"]')?.value.trim();
+    const email = form.querySelector('[name="email"]')?.value.trim();
+    const message = form.querySelector('[name="message"]')?.value.trim();
 
     if (!name || !email || !message) {
       showFormMessage('Please fill all fields!', 'red');
@@ -51,9 +65,10 @@ if (form && formMsg) {
 }
 
 /**
- * Show form message
+ * Show form message safely
  */
 function showFormMessage(text, color) {
+  if (!formMsg) return;
   formMsg.textContent = text;
   formMsg.style.color = color;
 }
@@ -69,22 +84,25 @@ function isValidEmail(email) {
 /* =====================================================
    Scroll Reveal Animation
 ===================================================== */
-const revealElements = document.querySelectorAll('.reveal');
+const revealElements = $$('.reveal');
 
 if (revealElements.length > 0) {
-  const observer = new IntersectionObserver(
-    (entries, observer) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('active');
-          observer.unobserve(entry.target);
-        }
-      });
-    },
-    {
-      threshold: 0.2
-    }
-  );
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver(
+      (entries, obs) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+            obs.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
 
-  revealElements.forEach(el => observer.observe(el));
+    revealElements.forEach(el => observer.observe(el));
+  } else {
+    // Fallback for old browsers
+    revealElements.forEach(el => el.classList.add('active'));
+  }
 }
