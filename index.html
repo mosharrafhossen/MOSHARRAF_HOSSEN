@@ -1,0 +1,489 @@
+<!doctype html>
+<!-- 
+  HTML5 Document
+  Language: English
+  Purpose: Personal Portfolio Website
+-->
+<html lang="en">
+
+<head>
+  <!-- Character encoding -->
+  <meta charset="utf-8" />
+
+  <!-- Responsive viewport settings -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Website title (shown in browser tab & SEO) -->
+  <title>Mosharraf Hossen | Frontend Developer</title>
+
+  <!-- SEO meta description -->
+  <meta name="description" content="Frontend Developer building fast, accessible and responsive websites using HTML, CSS and JavaScript." />
+
+  <!-- SEO keywords -->
+  <meta name="keywords" content="Frontend Developer, HTML, CSS, JavaScript, Portfolio" />
+
+  <!-- Theme color for mobile browsers -->
+  <meta name="theme-color" content="#4f46e5" />
+
+  <!-- Google Font: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- ================= HEADER START ================= -->
+ <header class="site-header">
+  <div class="container header-inner">
+
+    <!-- Brand / Logo -->
+    <a class="brand" href="#home">Mosharraf</a>
+
+    <!-- Main navigation -->
+    <nav class="nav" id="nav">
+      <a href="#home">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- ✅ এখানেই বসাবে -->
+    <button
+      id="themeToggle"
+      class="theme-toggle"
+      aria-label="Toggle dark mode"
+      aria-pressed="false"
+    >
+      🌙
+    </button>
+
+    <!-- Mobile navigation toggle button -->
+    <button
+      class="nav-toggle"
+      id="navToggle"
+      aria-label="Open navigation menu"
+      aria-expanded="false"
+      aria-controls="nav"
+    >
+      ☰
+    </button>
+
+  </div>
+</header>
+
+  <!-- ================= HEADER END ================= -->
+
+  <main>
+
+    <!-- ================= HERO SECTION START ================= -->
+    <section id="home" class="hero section">
+      <div class="container hero-inner">
+
+        <!-- Hero text content -->
+        <div class="hero-left">
+          
+        <h1 class="hero-title" data-animate="words">
+          Hi, I'm <span class="accent">Mosharraf Hossen</span>
+        </h1>
+
+
+
+          <!-- Short professional introduction -->
+          <p class="lead reveal">
+            Frontend Developer building fast, accessible & responsive websites.
+          </p>
+
+          <!-- Call-to-action buttons -->
+          <div class="hero-ctas reveal">
+            <a class="btn" href="#projects">View Projects</a>
+            <a class="btn alt" href="#contact">Hire Me</a>
+          </div>
+        </div>
+
+        <!-- Hero profile card -->
+        <div class="hero-right reveal">
+          <div class="profile-card">
+
+            <!-- Profile image -->
+            <img src="image/home-page/Mosharraf.jpg" alt="Mosharraf Hossen portrait" loading="lazy">
+
+            <!-- Profile details -->
+            <div class="profile-body">
+              <h3>Mosharraf Hossen</h3>
+              <p>Frontend Developer</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!-- ================= HERO SECTION END ================= -->
+
+    <!-- ================= PROJECTS SECTION START ================= -->
+       <section id="projects" class="projects section">
+  <div class="container">
+
+    <h2 class="section-title reveal">Projects</h2>
+    <p class="lead reveal">
+      Some real-world projects I’ve built recently.
+    </p>
+
+    <div class="grid">
+
+      <!-- Project 1 -->
+      <article class="project card reveal">
+        <img src="image/projects/MOSHARRAF-HOSSEN.png" alt="Personal portfolio website preview" loading="lazy">
+        <div class="project-info">
+          <h3>Personal Portfolio</h3>
+          <p>Modern responsive portfolio built with HTML, CSS & JavaScript.</p>
+          <span class="tech">HTML • CSS • JavaScript</span>
+          <a class="link" href="https://mosharrafhossen.github.io/Mosharraf-Hossen/" target="_blank" rel="noopener noreferrer">Live →</a>
+        </div>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="project card reveal">
+        <img src="image/projects/To-Do-App.png" alt="Todo app preview" loading="lazy">
+        <div class="project-info">
+          <h3>To Do App</h3>
+          <p>Task management app with LocalStorage support.</p>
+          <span class="tech">JavaScript • DOM • LocalStorage</span>
+          <a class="link" href="https://mosharrafhossen.github.io/To-Do-App/" target="_blank" rel="noopener noreferrer">Live →</a>
+        </div>
+      </article>
+
+      <!-- Project 3 -->
+      <article class="project card reveal">
+        <img src="image/projects/To-Do-List.jpg" alt="Todo list app preview" loading="lazy">
+        <div class="project-info">
+          <h3>To Do List</h3>
+          <p>Simple and clean daily task organizer.</p>
+          <span class="tech">HTML • CSS • JavaScript</span>
+          <a class="link" href="https://mosharrafhossen.github.io/To-Do-App-2/" target="_blank" rel="noopener noreferrer">Live →</a>
+        </div>
+      </article>
+
+      <!-- Project 4 -->
+      <article class="project card reveal">
+        <img src="image/projects/Calculator.png" alt="Calculator app preview" loading="lazy">
+        <div class="project-info">
+          <h3>Calculator App</h3>
+          <p>Basic calculator for arithmetic operations.</p>
+          <span class="tech">HTML • CSS • JavaScript</span>
+          <a class="link" href="https://mosharrafhossen.github.io/Calculator-App/" target="_blank" rel="noopener noreferrer">Live →</a>
+        </div>
+      </article>
+
+      <!-- Project 5 -->
+      <article class="project card reveal">
+        <img src="image/projects/Admission-Form.webp" alt="University application form preview" loading="lazy">
+        <div class="project-info">
+          <h3>University Application Form</h3>
+          <p>Student admission form with clean UI.</p>
+          <span class="tech">HTML • CSS</span>
+          <a class="link" href="https://mosharrafhossen.github.io/university-application-form/" target="_blank" rel="noopener noreferrer">Live →</a>
+        </div>
+      </article>
+
+      <!-- Project 6 -->
+      <article class="project card reveal">
+        <img src="image/projects/Alina-Fashion.png" alt="Fashion store website preview" loading="lazy">
+        <div class="project-info">
+          <h3>Alina Fashion</h3>
+          <p>Modern fashion store landing website.</p>
+          <span class="tech">HTML • CSS • JavaScript</span>
+          <a class="link" href="https://mosharrafhossen.github.io/Alina-fashion/" target="_blank" rel="noopener noreferrer">Live →</a>
+        </div>
+      </article>
+
+      <!-- Project 7 -->
+      <article class="project card reveal">
+        <img src="image/projects/FoodDash.jpg" alt="Food delivery website preview" loading="lazy">
+        <div class="project-info">
+          <h3>Food Dash</h3>
+          <p>Fast food delivery service website.</p>
+          <span class="tech">HTML • CSS • JavaScript</span>
+          <a class="link" href="https://mosharrafhossen.github.io/FoodDash/" target="_blank" rel="noopener noreferrer">Live →</a>
+        </div>
+      </article>
+
+      <!-- Project 8 -->
+      <article class="project card reveal">
+        <img src="image/projects/Survay-Form.avif" alt="Survey form preview" loading="lazy">
+        <div class="project-info">
+          <h3>Survey Form</h3>
+          <p>Form to collect user opinions and feedback.</p>
+          <span class="tech">HTML • CSS</span>
+          <a class="link" href="https://mosharrafhossen.github.io/Survay-Form/" target="_blank" rel="noopener noreferrer">Live →</a>
+        </div>
+      </article>
+
+      <!-- Project 9 -->
+      <article class="project card reveal">
+        <img src="image/projects/Today's-Inspiration.webp" alt="Inspiration app preview" loading="lazy">
+        <div class="project-info">
+          <h3>Inspiration App</h3>
+          <p>Daily motivational quotes application.</p>
+          <span class="tech">HTML • CSS • JavaScript</span>
+          <a class="link" href="https://mosharrafhossen.github.io/inspiration-app/" target="_blank" rel="noopener noreferrer">Live →</a>
+        </div>
+      </article>
+
+      <!-- Project 10 -->
+      <article class="project card reveal">
+        <img src="image/projects/Class-Routine.jpg" alt="Class routine app preview" loading="lazy">
+        <div class="project-info">
+          <h3>Class Routine</h3>
+          <p>Weekly class schedule display app.</p>
+          <span class="tech">HTML • CSS • JavaScript</span>
+          <a class="link" href="https://mosharrafhossen.github.io/Class-Routine/" target="_blank" rel="noopener noreferrer">Live →</a>
+        </div>
+      </article>
+
+      <!-- Project 11 -->
+      <article class="project card reveal">
+        <img src="image/projects/Quiz-app.webp" alt="Quiz application preview" loading="lazy">
+        <div class="project-info">
+          <h3>Quiz App</h3>
+          <p>Interactive quiz app with multiple questions.</p>
+          <span class="tech">HTML • CSS • JavaScript</span>
+          <a class="link" href="https://mosharrafhossen.github.io/Quiz-App/" target="_blank" rel="noopener noreferrer">Live →</a>
+        </div>
+      </article>
+
+      <!-- Project 12 -->
+      <article class="project card reveal">
+        <img src="image/projects/Calendar.jpg" alt="Calendar app preview" loading="lazy">
+        <div class="project-info">
+          <h3>Calendar</h3>
+          <p>Date-based task planning calendar.</p>
+          <span class="tech">HTML • CSS • JavaScript</span>
+          <a class="link" href="https://mosharrafhossen.github.io/Calendar/" target="_blank" rel="noopener noreferrer">Live →</a>
+        </div>
+      </article>
+
+      <!-- Project 13 -->
+      <article class="project card reveal">
+        <img src="image/projects/Blog.webp" alt="Personal blog website preview" loading="lazy">
+        <div class="project-info">
+          <h3>Mosharraf’s Blog</h3>
+          <p>Personal blog sharing thoughts and articles.</p>
+          <span class="tech">HTML • CSS</span>
+          <a class="link" href="https://mosharrafhossen.github.io/Mosharraf-s-Blog/" target="_blank" rel="noopener noreferrer">Live →</a>
+        </div>
+      </article>
+
+      <!-- Project 14 -->
+      <article class="project card reveal">
+        <img src="image/projects/Age-Calculator.png" alt="Age calculator app preview" loading="lazy">
+        <div class="project-info">
+          <h3>Age Calculator</h3>
+          <p>Calculates age from date of birth.</p>
+          <span class="tech">HTML • CSS • JavaScript</span>
+          <a class="link" href="https://mosharrafhossen.github.io/age-calculator/" target="_blank" rel="noopener noreferrer">Live →</a>
+        </div>
+      </article>
+
+      <!-- Project 15 -->
+      <article class="project card reveal">
+        <img src="image/projects/Currency-Converter.jpg" alt="Currency converter app preview" loading="lazy">
+        <div class="project-info">
+          <h3>Currency Converter</h3>
+          <p>Convert currencies using real-time logic.</p>
+          <span class="tech">HTML • CSS • JavaScript</span>
+          <a class="link" href="https://mosharrafhossen.github.io/Currency-Converter/" target="_blank" rel="noopener noreferrer">Live →</a>
+        </div>
+      </article>
+
+      <!-- Project 16 -->
+      <article class="project card reveal">
+        <img src="image/projects/Food-Order-Form.jpg" alt="Food order form preview" loading="lazy">
+        <div class="project-info">
+          <h3>Food Order Form</h3>
+          <p>Simple food ordering form interface.</p>
+          <span class="tech">HTML • CSS</span>
+          <a class="link" href="https://mosharrafhossen.github.io/Food-Order-Form/" target="_blank" rel="noopener noreferrer">Live →</a>
+        </div>
+      </article>
+
+      <!-- Project 17 -->
+      <article class="project card reveal">
+        <img src="image/projects/Word-Counter.png" alt="Word counter tool preview" loading="lazy">
+        <div class="project-info">
+          <h3>Word Counter</h3>
+          <p>Counts words and characters in text.</p>
+          <span class="tech">HTML • CSS • JavaScript</span>
+          <a class="link" href="https://mosharrafhossen.github.io/Word-Counter/" target="_blank" rel="noopener noreferrer">Live →</a>
+        </div>
+      </article>
+
+      <!-- Project 18 -->
+      <article class="project card reveal">
+        <img src="image/projects/Color-Picker-Tool.jpg" alt="Color picker tool preview" loading="lazy">
+        <div class="project-info">
+          <h3>Color Picker Tool</h3>
+          <p>Select colors and get color codes.</p>
+          <span class="tech">HTML • CSS • JavaScript</span>
+          <a class="link" href="https://mosharrafhossen.github.io/Color-Picker-Tool/" target="_blank" rel="noopener noreferrer">Live →</a>
+        </div>
+      </article>
+
+      <!-- Project 19 -->
+      <article class="project card reveal">
+        <img src="image/projects/RiseUp.webp" alt="Motivational website preview" loading="lazy">
+        <div class="project-info">
+          <h3>RiseUp</h3>
+          <p>Motivational quotes and positivity app.</p>
+          <span class="tech">HTML • CSS • JavaScript</span>
+          <a class="link" href="https://mosharrafhossen.github.io/RiseUp/" target="_blank" rel="noopener noreferrer">Live →</a>
+        </div>
+      </article>
+
+      <!-- Project 20 -->
+      <article class="project card reveal">
+        <img src="image/projects/MCQ-Exam.jpg" alt="MCQ exam website preview" loading="lazy">
+        <div class="project-info">
+          <h3>MCQ Exam</h3>
+          <p>Online multiple-choice test platform.</p>
+          <span class="tech">HTML • CSS • JavaScript</span>
+          <a class="link" href="https://mosharrafhossen.github.io/MCQ-Exam/" target="_blank" rel="noopener noreferrer">Live →</a>
+        </div>
+      </article>
+
+      <!-- Project 21 -->
+      <article class="project card reveal">
+        <img src="image/projects/landing-page.jpeg" alt="Landing page preview" loading="lazy">
+        <div class="project-info">
+          <h3>Landing Page</h3>
+          <p>Conversion-focused landing page design.</p>
+          <span class="tech">HTML • CSS</span>
+          <a class="link" href="https://mosharrafhossen.github.io/Mosharraf-Hossen/" target="_blank" rel="noopener noreferrer">Live →</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+
+    <!-- ================= PROJECTS SECTION END ================= -->
+
+    <!-- ================= ABOUT SECTION START ================= -->
+    <section id="about" class="about section">
+      <div class="container about-inner">
+
+        <!-- About text -->
+        <div class="about-text">
+          <h2 class="section-title" data-animate="words">About Me</h2>
+
+          <p data-animate="words">
+            I’m a Frontend Developer with strong fundamentals in HTML, CSS and JavaScript.
+            I focus on building clean UI, responsive layouts and performant websites.
+          </p>
+
+          <p data-animate="words">
+            Tools I use: HTML, CSS, JavaScript, Git & GitHub.
+          </p>
+      </div>
+
+
+        <!-- Avatar image -->
+        <div class="about-avatar reveal">
+          <img src="image/Avatar/avatar.png" alt="Developer avatar" loading="lazy">
+        </div>
+      </div>
+    </section>
+    <!-- ================= ABOUT SECTION END ================= -->
+
+    <!-- ================= SKILLS SECTION START ================= -->
+   <section id="skills" class="skills section">
+  <div class="container">
+
+    <!-- Section heading -->
+    <h2 class="section-title reveal">Skills</h2>
+
+    <!-- Skill list (FIXED) -->
+    <div class="skill-list">
+
+      <div class="skill">
+        <h4>HTML</h4>
+        <p class="skill-note">Semantic, SEO-friendly markup</p>
+        <div class="bar">
+          <span data-skill="95"></span>
+        </div>
+      </div>
+
+      <div class="skill">
+        <h4>CSS</h4>
+        <p class="skill-note">Flexbox, Grid, Responsive Design</p>
+        <div class="bar">
+          <span data-skill="90"></span>
+        </div>
+      </div>
+
+      <div class="skill">
+        <h4>JavaScript</h4>
+        <p class="skill-note">DOM, ES6, Events, LocalStorage</p>
+        <div class="bar">
+          <span data-skill="80"></span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    <!-- ================= SKILLS SECTION END ================= -->
+
+    <!-- ================= CONTACT SECTION START ================= -->
+    <section id="contact" class="contact section">
+      <div class="container">
+
+        <!-- Section heading -->
+        <h2 class="section-title reveal">Contact</h2>
+        <p class="lead reveal">Let’s work together.</p>
+
+        <!-- Contact form -->
+        <form id="contactForm" class="contact-form reveal" novalidate>
+
+          <!-- Name & Email fields -->
+          <div class="row">
+            <input type="text" name="name" placeholder="Your name" required>
+            <input type="email" name="email" placeholder="Your email" required>
+          </div>
+
+          <!-- Message field -->
+          <textarea name="message" placeholder="Your message" required></textarea>
+
+          <!-- Submit button -->
+          <button class="btn" type="submit">Send Message</button>
+
+          <!-- Form feedback message -->
+          <p id="formMsg" class="form-msg"></p>
+        </form>
+      </div>
+    </section>
+    <!-- ================= CONTACT SECTION END ================= -->
+
+  </main>
+
+  <!-- ================= FOOTER START ================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Mosharraf Hossen</p>
+    </div>
+
+    <!-- Back to top button -->
+    <button id="backToTop" aria-label="Back to top">↑</button>
+  </footer>
+  <!-- ================= FOOTER END ================= -->
+
+  <!-- Main JavaScript file -->
+  <script src="js/custom.js"></script>
+
+</body>
+</html>
